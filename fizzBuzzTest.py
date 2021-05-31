@@ -9,9 +9,15 @@ class palendrome:
     i=1
     for i in range (100):
       gen = i
-      if gen%3 == 0:
+      if gen%3 == 0 and gen%5 ==0:
+        self.printed.append("fizzbuzz")
+        print("fizzbuzz")
+      elif gen%3 == 0:
         self.printed.append("fizz")
         print("fizz")
+      elif gen%5 == 0:
+        self.printed.append("buzz")
+        print("buzz")
       else:
         self.printed.append(gen)
         print(gen)
@@ -29,7 +35,20 @@ def testFizz():
     
     assert name.printed[3] == "fizz"
     
-
-
+def testBuzz():
+    print("testing to see if the third thing it prints is fizz:")
+    name = palendrome()
+    name.fizzBuzzMe()
+    
+    assert name.printed[5] == "buzz"
+    
+def fizzBuzTest():
+    print("testing to see if the third thing it prints is fizz:")
+    name = palendrome()
+    name.fizzBuzzMe()
+    
+    assert name.printed[15] == "fizzbuzz"
 
 testFizz()
+testBuzz()
+fizzBuzTest()
