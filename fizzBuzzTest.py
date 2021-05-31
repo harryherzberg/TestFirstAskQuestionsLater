@@ -6,21 +6,29 @@ class palendrome:
     print("My Fiz Buzz Program")
     self.printed = []
   def fizzBuzzMe(self):
+    i=1
     for i in range (100):
-      self.printed.append(i)
-      print(i)
+      gen = i
+      if gen%3 == 0:
+        self.printed.append("fizz")
+        print("fizz")
+      else:
+        self.printed.append(gen)
+        print(gen)
+      
+      
 
 
 
     #tests to see if the third thing it prints is "fizz"
     #should run false since I dont have any logic making it turn shit into fizz or buzz
 def testFizz():
-    print("testing to see if")
+    print("testing to see if the third thing it prints is fizz:")
     name = palendrome()
     name.fizzBuzzMe()
-    print(name.printed[3])
+    
     assert name.printed[3] == "fizz"
-
+    
 
 
 
