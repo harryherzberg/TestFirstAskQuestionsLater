@@ -36,14 +36,14 @@ def testFizz():
     assert name.printed[3] == "fizz"
     
 def testBuzz():
-    print("testing to see if the third thing it prints is fizz:")
+    print("testing to see if the 5th thing it prints is buzz:")
     name = palendrome()
     name.fizzBuzzMe()
     
     assert name.printed[5] == "buzz"
     
 def fizzBuzTest():
-    print("testing to see if the third thing it prints is fizz:")
+    print("testing to see if the fifthteenth thing it prints is fizzbuzz:")
     name = palendrome()
     name.fizzBuzzMe()
     
