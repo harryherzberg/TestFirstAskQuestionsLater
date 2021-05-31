@@ -10,8 +10,14 @@ class palendrome:
       if gen%400 == 0:
         print("is leap year")
         return True
+      if gen%100 == 0:
+        print("is not leap year")
+        return False
+      if gen%4 == 0: 
+        print("is a leap year")
+        return True
+      print("is not a leap year")
       return False
-     
       
       
 
@@ -21,8 +27,6 @@ class palendrome:
 def testFor():
 
     name = palendrome()
-    
-    
     assert name.leap(4) == True
     
 
