@@ -28,7 +28,16 @@ def testFor():
 
     name = palendrome()
     assert name.leap(4) == True
-    
+def testFive():
+
+    name = palendrome()
+    assert name.leap(100) == False
+def testSix():
+
+    name = palendrome()
+    assert name.leap(4000) == True
 
 
 testFor()
+testFive()
+testSix()
